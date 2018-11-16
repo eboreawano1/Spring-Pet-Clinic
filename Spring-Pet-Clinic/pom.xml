@@ -31,6 +31,17 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<goal>install</goal>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
+	<scm>
+		<developerConnection>scm:git:git@github.com:eboreawano1/Spring-Pet-Clinic.git</developerConnection>
+	</scm>
 </project>
